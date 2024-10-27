@@ -211,11 +211,17 @@ h3{
     height: auto;
     margin-left: 25em;
 }
-.article-1{
+.article-1 {
     width: 45em;
     height: auto;
     margin-left: 25em;
 }
+.article-3 {
+    width: 45em;
+    height: auto;
+    margin-left: 25em;
+}
+
 
 .article-1 > h2 {
     display: none;
