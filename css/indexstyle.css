@@ -99,64 +99,66 @@ footer {
 .nav-links a:hover {
     color: var(--accent-color);
 }
-
+/*Head pic*/
+.head-pic img {
+    width: 100%;
+    height: auto;
+    max-height: 40em;
+}
 /* Hero Section */
 .hero {
-    background-size: cover;
     background-color: #5C4B45;
     color: var(--neutral-color-1);
-    padding: 2em 0;
+    padding: 3em 1em;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero > figure > img {
-    width: 40em;
+    width: 80%;
+    max-width: 40em; 
     height: auto;
-    padding: 4em 0 0 0;
-    margin-left: 5em;
-}
-
-.hero > figure {
-    display: flex;
+    padding: 2em 0 0 0;
 }
 
 .hero > h1 {
     font-size: var(--font-size-h1);
-    background-position: center;
-    text-align: center;
+    margin: 1em 0;
 }
 
 .hero > figure > p {
-    font-size: 1.2em;
-    background-position: center;
-    margin: 15em 5em 0 5em;
+    font-size: 1.1em;
+    margin: 1.5em 1em;
+    max-width: 30em;
 }
 
 /* Skincare Importance Section */
 .skincare-importance {
-    background-size: cover;
     color: var(--neutral-color-2);
-    padding: 2em 0;
+    padding: 3em 1em;
     background-color: var(--primary-color);
+    text-align: center;
 }
-.skincare-importance > figure{
+
+.skincare-importance > figure {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
 }
-.skincare-importance > figure >img {
-    width: 40em;
+
+.skincare-importance > figure > img {
+    width: 80%;
+    max-width: 40em;
     height: auto;
-    padding: 4em 5em 5em 5em;
+    padding: 2em;
 }
 
 .skincare-importance > h2 {
     font-size: var(--font-size-h2);
-    background-position: center;
-    text-align: center;
-}
-
-.skincare-importance > figure > p{
-    font-size: 1.2em;
-    background-position: center;
-    margin: 15em 5em 0 5em;
+    margin: 1em;
 }
 
 /* Skincare Tips Section */
@@ -300,7 +302,7 @@ footer {
 
     /* General Body Padding */
     body {
-        padding: 1em;
+        padding: 0.5em;
     }
 
     /* Navbar adjustments */
@@ -315,48 +317,26 @@ footer {
         gap: 1em;
     }
 
-    /* Hero Section adjustments */
-    .hero {
-        padding: 1em 0;
-        text-align: center;
+    .hero > h1 {
+        font-size: 1.8rem;
     }
 
     .hero > figure > img {
-        width: 100%;
-        height: auto;
-        margin: 1em 0;
-    }
-
-    .hero > h1 {
-        font-size: var(--font-size-h1);
+        width: 20em;
     }
 
     .hero > figure > p {
-        font-size: var(--font-size-h5);
-        margin: 1em;
-    }
-
-    /* Skincare Importance Section */
-    .skincare-importance {
-        padding: 1em 0;
-        text-align: center;
-    }
-
-    .skincare-importance > figure > img {
-        width: 100%;
-        height: auto;
-        padding: 1em;
+        font-size: 1rem;
+        margin: 1em 1em;
     }
 
     .skincare-importance > h2 {
-        font-size: var(--font-size-h2);
+        font-size: 1.6rem;
     }
 
-    .skincare-importance > figure > p {
-        font-size: var(--font-size-h5);
-        margin: 1em;
+    .skincare-importance > figure > img {
+        width: 20em;
     }
-
     /* Tips Section adjustments */
     .tips-grid, .tips-grid-1 {
         flex-direction: column;

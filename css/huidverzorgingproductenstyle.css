@@ -12,18 +12,17 @@
     --font-size-h6: 1.25rem;
     --font-size-h7: 0.88rem;
     --font-size-h8: 0.56rem;
-    --font-size-mobile-h1: 1.5rem;
-    --font-size-mobile-h2: 1.2rem;
-    --font-size-mobile-h3: 0.94rem;
-    --font-size-mobile-h4: 0.69rem;
-    --font-size-mobile-h5: 0.56rem;
-    --font-size-mobile-h6: 0.44rem;
+    --font-size-mobile-h1: 1.8rem;
+    --font-size-mobile-h2: 1.5rem;
+    --font-size-mobile-h3: 1.25rem;
+    --font-size-mobile-h4: 1rem;
+    --font-size-mobile-h5: 0.88rem;
+    --font-size-mobile-h6: 0.75rem;
     --table-border: 2px solid var(--accent-color);
     --main-font: "Open Sans", sans-serif;
     --heading-font: "Montserrat", sans-serif;
     --font-style: normal;
-    --font-weight: 400;
-
+    --font-weight: 400;
 }
 
 * {
@@ -32,8 +31,9 @@
     box-sizing: border-box;
     font-family: var(--main-font);
 }
+
 html {
-    font-size: 16px; /* Set base font-size for easier scaling */
+    font-size: 16px;
 }
 
 body {
@@ -42,7 +42,6 @@ body {
     padding: 0;
     background-color: var(--primary-color);
 }
-
 
 nav {
     display: flex;
@@ -58,7 +57,6 @@ footer {
     color: var(--neutral-color-2);
 }
 
-/* Styling the logo with figure and figcaption */
 .logo {
     display: flex;
     align-items: center;
@@ -68,7 +66,7 @@ footer {
 .logo img {
     width: 3rem;
     height: 3rem;
-    margin-right: 0.625rem; 
+    margin-right: 0.625rem;
 }
 
 .logo figcaption {
@@ -100,9 +98,6 @@ footer {
     color: var(--accent-color);
 }
 
-
-/* huidproducten tips */
-
 .huidproducten-header {
     background-size: cover;
     text-align: center;
@@ -116,41 +111,25 @@ footer {
 }
 
 .producten-item {
-    padding: 10em 0 10em 0;
+    padding: 2rem;
     width: 20em;
     text-align: center;
     color: var(--neutral-color-2);
     border: 2px solid var(--secondary-color);
-    padding: 2rem;
     margin: 2rem;
 }
-.huidproducten-header > article > figure > img{
+
+.huidproducten-header > article > figure > img {
     width: 10rem;
     height: 10rem;
     max-width: 20rem;
-
 }
 
 .huidproducten-header > h1 {
     color: var(--neutral-color-2);
     padding: 2em 0 0 0;
-    text-align:center;
+    text-align: center;
 }
-
-.huidproducten-header > article {
-    background-color: var(--primary-color);
-    color: var(--neutral-color-2);
-}
-
-.huidproucten-item > p {
-    font-size: var(--font-size-h6);
-    background-position: center;
-    text-align: left;
-    margin-top: 5rem;
-    padding-bottom: 2rem;
-}
-
-/* Why us */
 
 .why-us {
     background-color: var(--primary-color);
@@ -162,7 +141,6 @@ footer {
 .why-us > h2 {
     color: var(--neutral-color-2);
     font-size: var(--font-size-h4);
-    background-position: center;
     text-align: center;
     padding-bottom: 5em;
     padding-top: 5em;
@@ -176,7 +154,6 @@ footer {
 }
 
 .why-us-item {
-    padding: 10em 0 10em 0;
     width: 20em;
     text-align: center;
     color: var(--neutral-color-2);
@@ -185,9 +162,6 @@ footer {
     margin: 2rem;
 }
 
-
-
-/* Social Icons */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -200,7 +174,6 @@ footer {
     height: 2rem;
 }
 
-/* Footer Links */
 .footer-links {
     display: flex;
     justify-content: center;
@@ -232,7 +205,6 @@ footer {
     color: var(--accent-color);
 }
 
-/* Footer Logo */
 .footer-logo {
     text-align: center;
 }
@@ -245,8 +217,32 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 48em) {
+@media (max-width: 992px) {
+    .why-us-grid,
+    .huidproducten-header > article {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
 
+    .why-us-item,
+    .producten-item {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .huidproducten-header > article > figure > img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .huidproducten-header > h1,
+    .why-us > h2 {
+        font-size: var(--font-size-mobile-h2);
+    }
+}
+
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
         align-items: flex-start;
@@ -267,19 +263,33 @@ footer {
         gap: 1rem;
     }
 
-    .why-us-grid {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .why-us-item, .producten-item {
+    .why-us-item,
+    .producten-item {
         width: 100%;
         padding: 1.5rem;
-        margin: 1rem 0;
     }
 
     .social-icons {
         margin-bottom: 1rem;
+    }
+
+    .why-us > h2 {
+        font-size: var(--font-size-mobile-h3);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-links,
+    .nav-links {
+        text-align: center;
+    }
+
+    .why-us > h2,
+    .huidproducten-header > h1 {
+        font-size: var(--font-size-mobile-h1);
+    }
+
+    .footer-logo figcaption {
+        font-size: 1.5rem;
     }
 }
