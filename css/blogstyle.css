@@ -19,13 +19,12 @@
     --font-size-mobile-h5: 0.56rem;
     --font-size-mobile-h6: 0.44rem;
     --table-border: 2px solid var(--accent-color);
-    --main-font: "Open Sans", sans-serif;
+    --main-font:sans-serif;
     --heading-font: "Montserrat", sans-serif;
     --font-style: normal;
     --font-weight: 400;
 
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -182,6 +181,16 @@ h3{
     padding: 2rem;
     margin: 2rem;
 }
+.categorie-grid-1 > h3 {
+    display: none;
+}
+.categorie-grid > h3 {
+    display: none;
+}
+
+.categorie > h2 {
+    display: none;
+}
 
 
 
@@ -206,6 +215,18 @@ h3{
     width: 45em;
     height: auto;
     margin-left: 25em;
+}
+
+.article-1 > h2 {
+    display: none;
+}
+
+.article-2 > h2 {
+    display: none;
+}
+
+.article-3 > h2 {
+    display: none;
 }
 
 .producten-item {

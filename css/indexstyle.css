@@ -1,7 +1,7 @@
 :root {
     --primary-color: #FAF3E0;
     --secondary-color: #C1B2A1;
-    --accent-color: #D7B9C31;
+    --accent-color: #D7B9C3;
     --neutral-color-1: #FFFFFF;
     --neutral-color-2: #5C4B45;
     --font-size-h1: 3.8rem;
@@ -19,13 +19,12 @@
     --font-size-mobile-h5: 0.56rem;
     --font-size-mobile-h6: 0.44rem;
     --table-border: 2px solid var(--accent-color);
-    --main-font: "Open Sans", sans-serif;
+    --main-font:sans-serif;
     --heading-font: "Montserrat", sans-serif;
     --font-style: normal;
     --font-weight: 400;
 
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -99,15 +98,16 @@ footer {
 .nav-links a:hover {
     color: var(--accent-color);
 }
+
 /*Head pic*/
-.head-pic img {
+.head-web > img {
     width: 100%;
     height: auto;
     max-height: 40em;
 }
 /* Hero Section */
 .hero {
-    background-color: #5C4B45;
+    background-color: var(--neutral-color-2);
     color: var(--neutral-color-1);
     padding: 3em 1em;
     text-align: center; 
@@ -182,6 +182,10 @@ footer {
     gap: 10em;
 }
 
+.tips-grid > h3 {
+    display: none;
+}
+
 .tip-item {
     padding: 5em 0 10em 0;
     width: 20em;
@@ -224,6 +228,9 @@ footer {
     color: var(--neutral-color-2);
     background-color: var(--secondary-color);
 }
+.tips-grid-1 > h3 {
+    display: none;
+}
 
 /* Last tips Section */
 .last-tip {
@@ -239,6 +246,10 @@ footer {
     background-position: center;
     text-align: center;
 }
+
+.last-tip > h2 {
+    display: none;
+} 
 
 /* Social Icons */
 .social-icons {
@@ -329,6 +340,7 @@ footer {
         font-size: 1rem;
         margin: 1em 1em;
     }
+    
 
     .skincare-importance > h2 {
         font-size: 1.6rem;

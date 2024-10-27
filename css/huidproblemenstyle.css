@@ -4,19 +4,26 @@
     --accent-color: #D7B9C3;
     --neutral-color-1: #FFFFFF;
     --neutral-color-2: #5C4B45;
-
-    /* Font Sizes */
-    --font-size-h1: clamp(2rem, 2.5vw + 1rem, 3.8rem);
-    --font-size-h2: clamp(1.8rem, 2vw + 0.8rem, 3.1rem);
-    --font-size-h3: clamp(1.5rem, 1.5vw + 0.5rem, 2.4rem);
-    --font-size-h4: clamp(1.2rem, 1vw + 0.4rem, 1.9rem);
-    --font-size-h5: clamp(1rem, 1vw + 0.3rem, 1.6rem);
-
-    /* Font Variables */
-    --main-font: "Open Sans", sans-serif;
+    --font-size-h1: 3.8rem;
+    --font-size-h2: 3.1rem;
+    --font-size-h3: 2.4rem;
+    --font-size-h4: 1.9rem;
+    --font-size-h5: 1.6rem;
+    --font-size-h6: 1.25rem;
+    --font-size-h7: 0.88rem;
+    --font-size-h8: 0.56rem;
+    --font-size-mobile-h1: 1.5rem;
+    --font-size-mobile-h2: 1.2rem;
+    --font-size-mobile-h3: 0.94rem;
+    --font-size-mobile-h4: 0.69rem;
+    --font-size-mobile-h5: 0.56rem;
+    --font-size-mobile-h6: 0.44rem;
+    --table-border: 2px solid var(--accent-color);
+    --main-font:sans-serif;
     --heading-font: "Montserrat", sans-serif;
     --font-style: normal;
-    --font-weight: 400;
+    --font-weight: 400;
+
 }
 
 * {
@@ -76,8 +83,8 @@ nav {
 /* Huidproblemen Section */
 .huid-block {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
     padding: 2em;
 }
 
@@ -194,27 +201,5 @@ nav {
     .footer-links {
         flex-direction: column;
         gap: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero > h1 {
-        font-size: var(--font-size-h3);
-    }
-
-    .hero > p {
-        font-size: var(--font-size-h6);
-    }
-
-    .huid-title, .huid-text {
-        font-size: var(--font-size-h6);
-    }
-
-    .nav-links a {
-        font-size: 0.9rem;
-    }
-
-    .footer-links strong {
-        font-size: 1rem;
     }
 }

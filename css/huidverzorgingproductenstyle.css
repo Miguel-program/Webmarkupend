@@ -12,19 +12,19 @@
     --font-size-h6: 1.25rem;
     --font-size-h7: 0.88rem;
     --font-size-h8: 0.56rem;
-    --font-size-mobile-h1: 1.8rem;
-    --font-size-mobile-h2: 1.5rem;
-    --font-size-mobile-h3: 1.25rem;
-    --font-size-mobile-h4: 1rem;
-    --font-size-mobile-h5: 0.88rem;
-    --font-size-mobile-h6: 0.75rem;
+    --font-size-mobile-h1: 1.5rem;
+    --font-size-mobile-h2: 1.2rem;
+    --font-size-mobile-h3: 0.94rem;
+    --font-size-mobile-h4: 0.69rem;
+    --font-size-mobile-h5: 0.56rem;
+    --font-size-mobile-h6: 0.44rem;
     --table-border: 2px solid var(--accent-color);
-    --main-font: "Open Sans", sans-serif;
+    --main-font:sans-serif;
     --heading-font: "Montserrat", sans-serif;
     --font-style: normal;
-    --font-weight: 400;
-}
+    --font-weight: 400;
 
+}
 * {
     margin: 0;
     padding: 0;
@@ -151,6 +151,10 @@ footer {
     justify-content: center;
     gap: 10em;
     background-color: var(--primary-color);
+}
+
+.why-us-grid > h3{
+    display: none;
 }
 
 .why-us-item {

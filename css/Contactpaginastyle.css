@@ -19,13 +19,12 @@
     --font-size-mobile-h5: 0.56rem;
     --font-size-mobile-h6: 0.44rem;
     --table-border: 2px solid var(--accent-color);
-    --main-font: "Open Sans", sans-serif;
+    --main-font:sans-serif;
     --heading-font: "Montserrat", sans-serif;
     --font-style: normal;
     --font-weight: 400;
 
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -208,7 +207,6 @@ form button:hover {
     margin:15em 2em 15em 0;
     color: var(--neutral-color-2);
     text-align: center;
-    size: var(--font-size-h5);
     font-weight: bold;
 }
 

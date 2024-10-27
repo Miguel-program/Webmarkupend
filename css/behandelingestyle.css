@@ -19,13 +19,12 @@
     --font-size-mobile-h5: 0.56rem;
     --font-size-mobile-h6: 0.44rem;
     --table-border: 2px solid var(--accent-color);
-    --main-font: "Open Sans", sans-serif;
+    --main-font:sans-serif;
     --heading-font: "Montserrat", sans-serif;
     --font-style: normal;
     --font-weight: 400;
 
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -112,6 +111,10 @@ footer {
     color: var(--neutral-color-2);
     margin-bottom: 5rem;
 }
+/* article-title */ 
+.article-title > h2 {
+    display: none;
+}
 
 .article-title .item-title {
     font-size: 1.2rem; 
@@ -120,7 +123,7 @@ footer {
     max-width: 800px;
     margin: 0 auto; 
 }
-
+/* Soorten Behandelinge */
 
 .soorten-behandelingen {
     background-size: cover;
@@ -135,6 +138,7 @@ footer {
     margin-bottom: 5rem;
 }
 
+/*Behandelinge */
 .behandelingen {
     padding: 0 10rem 0 10rem;
 }
@@ -257,7 +261,7 @@ footer {
     }
 
     .behandelingen {
-        padding: 0 2rem; /
+        padding: 0 2rem;
     }
 
     .behandelingen > img {
