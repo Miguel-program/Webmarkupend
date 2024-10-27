@@ -1,0 +1,400 @@
+:root {
+    --primary-color: #FAF3E0;
+    --secondary-color: #C1B2A1;
+    --accent-color: #D7B9C31;
+    --neutral-color-1: #FFFFFF;
+    --neutral-color-2: #5C4B45;
+    --font-size-h1: 3.8rem;
+    --font-size-h2: 3.1rem;
+    --font-size-h3: 2.4rem;
+    --font-size-h4: 1.9rem;
+    --font-size-h5: 1.6rem;
+    --font-size-h6: 1.25rem;
+    --font-size-h7: 0.88rem;
+    --font-size-h8: 0.56rem;
+    --font-size-mobile-h1: 1.5rem;
+    --font-size-mobile-h2: 1.2rem;
+    --font-size-mobile-h3: 0.94rem;
+    --font-size-mobile-h4: 0.69rem;
+    --font-size-mobile-h5: 0.56rem;
+    --font-size-mobile-h6: 0.44rem;
+    --table-border: 2px solid var(--accent-color);
+    --main-font: "Open Sans", sans-serif;
+    --heading-font: "Montserrat", sans-serif;
+    --font-style: normal;
+    --font-weight: 400;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+html {
+    font-size: 16px; /* Set base font-size for easier scaling */
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--neutral-color-2);
+}
+
+/* Styling the logo with figure and figcaption */
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.logo img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.625rem; 
+}
+
+.logo figcaption {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--neutral-color-2);
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.875rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--neutral-color-2);
+    font-size: 1rem;
+    letter-spacing: 0.03125rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-color: #5C4B45;
+    color: var(--neutral-color-1);
+    padding: 2em 0;
+}
+
+.hero > figure > img {
+    width: 40em;
+    height: auto;
+    padding: 4em 0 0 0;
+    margin-left: 5em;
+}
+
+.hero > figure {
+    display: flex;
+}
+
+.hero > h1 {
+    font-size: var(--font-size-h1);
+    background-position: center;
+    text-align: center;
+}
+
+.hero > figure > p {
+    font-size: 1.2em;
+    background-position: center;
+    margin: 15em 5em 0 5em;
+}
+
+/* Skincare Importance Section */
+.skincare-importance {
+    background-size: cover;
+    color: var(--neutral-color-2);
+    padding: 2em 0;
+    background-color: var(--primary-color);
+}
+.skincare-importance > figure{
+    display: flex;
+}
+.skincare-importance > figure >img {
+    width: 40em;
+    height: auto;
+    padding: 4em 5em 5em 5em;
+}
+
+.skincare-importance > h2 {
+    font-size: var(--font-size-h2);
+    background-position: center;
+    text-align: center;
+}
+
+.skincare-importance > figure > p{
+    font-size: 1.2em;
+    background-position: center;
+    margin: 15em 5em 0 5em;
+}
+
+/* Skincare Tips Section */
+.tips {
+    background-color: var(--neutral-color-2);
+    background-size: cover;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.tips > h2 {
+    color: var(--neutral-color-1);
+    font-size: var(--font-size-h2);
+    background-position: center;
+    text-align: center;
+}
+
+.tips-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+}
+
+.tip-item {
+    padding: 5em 0 10em 0;
+    width: 20em;
+    text-align: center;
+    color: var(--neutral-color-1);
+}
+
+.tip-item img {
+    width: 15em;
+    height: 15em;
+    margin-bottom: 20px;
+} 
+
+/* Skincare andere Tips Section */
+.tips-1 {
+    background-color: var(--primary-color);
+    background-size: cover;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.tips-1 > h2 {
+    color: var(--neutral-color-2);
+    font-size: var(--font-size-h2);
+    background-position: center;
+    text-align: center;
+}
+
+.tips-grid-1 {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    background-color: var(--primary-color);
+}
+
+.tip-item-1 {
+    padding: 10em 0 10em 0;
+    width: 20em;
+    text-align: center;
+    color: var(--neutral-color-2);
+    background-color: var(--secondary-color);
+}
+
+/* Last tips Section */
+.last-tip {
+    background-color: var(--neutral-color-2);
+    background-size: cover;
+    text-align: center;
+    padding: 15em 20em 15em 20em;
+}
+
+.last-tip > p {
+    color: var(--neutral-color-1);
+    font-size: var(--font-size-h6);
+    background-position: center;
+    text-align: center;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-icons img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links strong {
+    font-size: 1.125rem;
+    color: var(--neutral-color-2);
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--neutral-color-2);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer Logo */
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo figcaption {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--neutral-color-2);
+}
+
+/* Responsive Design */
+@media (max-width: 48em) { /* 768px equivalent */
+
+    /* General Body Padding */
+    body {
+        padding: 1em;
+    }
+
+    /* Navbar adjustments */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5em 1em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    /* Hero Section adjustments */
+    .hero {
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .hero > figure > img {
+        width: 100%;
+        height: auto;
+        margin: 1em 0;
+    }
+
+    .hero > h1 {
+        font-size: var(--font-size-h1);
+    }
+
+    .hero > figure > p {
+        font-size: var(--font-size-h5);
+        margin: 1em;
+    }
+
+    /* Skincare Importance Section */
+    .skincare-importance {
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .skincare-importance > figure > img {
+        width: 100%;
+        height: auto;
+        padding: 1em;
+    }
+
+    .skincare-importance > h2 {
+        font-size: var(--font-size-h2);
+    }
+
+    .skincare-importance > figure > p {
+        font-size: var(--font-size-h5);
+        margin: 1em;
+    }
+
+    /* Tips Section adjustments */
+    .tips-grid, .tips-grid-1 {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .tip-item, .tip-item-1 {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .tip-item img, .tip-item-1 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    /* Last Tips Section adjustments */
+    .last-tip {
+        padding: 2em;
+        font-size: var(--font-size-h5);
+    }
+
+    /* Footer adjustments */
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    /* Footer Logo adjustments */
+    .footer-logo figcaption {
+        font-size: var(--font-size-h3);
+        margin-bottom: 0.5em;
+    }
+}
